@@ -1,15 +1,20 @@
-/* Custom hover effect for cards */
-.card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
+/* Add these styles to your existing CSS */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height */
 }
 
-/* Custom link colors */
-a {
-    color: #0d6efd; /* Bootstrap primary color */
+main {
+    flex: 1; /* This makes the content expand */
+}
+
+footer {
+    margin-top: auto; /* Pushes footer to bottom */
+    width: 100%;
 }
