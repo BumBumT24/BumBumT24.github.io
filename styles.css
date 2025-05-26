@@ -1,0 +1,15 @@
+/* Custom hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom link colors */
+a {
+    color: #0d6efd; /* Bootstrap primary color */
+}
