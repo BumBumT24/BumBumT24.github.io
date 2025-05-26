@@ -1,20 +1,71 @@
-/* Add these styles to your existing CSS */
+/* Reset and base styles */
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Use viewport height */
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray background */
 }
 
+/* Main content area */
 main {
-    flex: 1; /* This makes the content expand */
+    flex: 1 0 auto;
+    width: 100%;
 }
 
+/* Footer */
 footer {
-    margin-top: auto; /* Pushes footer to bottom */
+    flex-shrink: 0;
     width: 100%;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero section */
+header {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+}
+
+/* Project cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Badges */
+.badge {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
 }
